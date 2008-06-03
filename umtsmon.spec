@@ -27,7 +27,7 @@ perl -pi -e 's/%{name}-128x128.png/%{name}.png/' %{name}.desktop
 %build
 %qmake_qt3
 %make
-lrelease %{name}.pro
+%{qt3bin}/lrelease %{name}.pro
 
 %install
 rm -rf %{buildroot}
