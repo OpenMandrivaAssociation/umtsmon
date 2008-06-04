@@ -1,12 +1,13 @@
 %define name umtsmon
 %define version 0.8
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Tool to control and monitor a wireless mobile network card
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.src.tar.gz
+Patch0:	 umtsmon-0.8-fr_i18n.patch
 License: GPLv2
 Group: Communications
 Url: http://umtsmon.sourceforge.net/
@@ -21,6 +22,7 @@ sending/receiving SMS.
 
 %prep
 %setup -q
+%patch0 -p1 -b .fr_i18n
 # do not use size-dependent icon path in desktop file
 perl -pi -e 's/%{name}-128x128.png/%{name}.png/' %{name}.desktop
 
