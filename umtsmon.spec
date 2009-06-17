@@ -1,6 +1,6 @@
 %define name umtsmon
-%define version 0.8
-%define release %mkrel 3
+%define version 0.9
+%define release %mkrel 1
 
 Summary: Tool to control and monitor a wireless mobile network card
 Name: %{name}
