@@ -10,7 +10,7 @@ Source0: %{name}-%{version}.src.tar.gz
 Patch0:	 umtsmon-0.8-fr_i18n.patch
 License: GPLv2
 Group: Communications
-Url: http://umtsmon.sourceforge.net/
+Url: https://umtsmon.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libusb-devel qt3-devel
 
