@@ -12,6 +12,7 @@ License: GPLv2
 Group: Communications
 Url: https://umtsmon.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	make
 BuildRequires: libusb-devel qt3-devel
 
 %description
